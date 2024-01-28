@@ -61,7 +61,7 @@ px.sankey(): Cria gráficos de fluxo de Sankey.
 
 <h1>Artigo </h1>
 link: https://oander.site/Artigos/Plotando%20gra%CC%81ficos%20com%20Plotly
-<br>
+<br><br>
 
 ![image](https://github.com/oanderoficial/plotly_notebook/assets/32654298/eb019215-d525-411a-8424-8d5b6fc1c9b0)
 
