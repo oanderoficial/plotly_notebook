@@ -1,5 +1,5 @@
 # Plotly Notebook
-Repositório criado com intuito de publicar  conteúdos relacionados  a aprendizado da biblioteca plotly no python 
+Repositório criado com intuito de publicar  conteúdos relacionados ao aprendizado da biblioteca plotly no python 
 
 <h1> Estudos pandas e plotly </h1>
 A biblioteca Plotly oferece uma variedade de opções para criar visualizações interativas. Aqui estão algumas das funções e gráficos mais comuns disponíveis no Plotly Express:
