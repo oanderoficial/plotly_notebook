@@ -110,4 +110,22 @@ link: https://oander.site/Artigos/Plotando%20gra%CC%81ficos%20com%20Plotly
 
 ![image](https://github.com/oanderoficial/plotly_notebook/assets/32654298/eb019215-d525-411a-8424-8d5b6fc1c9b0)
 
+<h4> Exemplos: </h4>
 
+<strong> Gráfico de dispersão 3D </strong>
+
+```python
+import pandas as pd
+import plotly.express as px
+
+# DataFrame de exemplo
+data = {'X': [1, 2, 3, 4],
+        'Y': [9, 11, 12, 13],
+        'Z': [100, 110, 120, 130]}
+df = pd.DataFrame(data)
+
+# Gráfico de dispersão 3D
+figura = px.scatter_3d(df, x='X', y='Y', z='Z', title='Gráfico de Dispersão 3D', template='plotly_dark')
+figura.show()
+
+```
