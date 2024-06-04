@@ -170,3 +170,21 @@ figura = px.bar(df, x='Cargos', y= 'salario',
 figura.show()
 
 ```
+<strong> Funnel Graph 3D </strong>
+
+```python
+
+import pandas as ps 
+import plotly.express as px
+
+data = {'Cargos': ['Analista', 'cientista de dados', 'programador'], 
+        'salario': [3000, 5600, 7000]}
+
+df = pd.DataFrame(data)
+
+figura = px.bar(df, x='Cargos', y= 'salario', 
+               title='Gráfico de barras',
+               template='plotly_dark')
+figura.show()
+
+```
