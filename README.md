@@ -151,3 +151,22 @@ fig = px.line(df, x='Mês', y=['Faculdade', 'Transporte', 'Alimentacao'],
 fig.show()
 
 ```
+
+<strong> Gráfico de Barras </strong>
+
+```python
+
+import pandas as ps 
+import plotly.express as px
+
+data = {'Cargos': ['Analista', 'cientista de dados', 'programador'], 
+        'salario': [3000, 5600, 7000]}
+
+df = pd.DataFrame(data)
+
+figura = px.bar(df, x='Cargos', y= 'salario', 
+               title='Gráfico de barras',
+               template='plotly_dark')
+figura.show()
+
+```
