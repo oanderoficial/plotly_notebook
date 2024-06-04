@@ -129,3 +129,25 @@ figura = px.scatter_3d(df, x='X', y='Y', z='Z', title='Gráfico de Dispersão 3D
 figura.show()
 
 ```
+
+<strong> Gráfico de linhas com múltiplas séries </strong>
+
+```python
+
+import pandas as pd
+import plotly.express as px
+
+# DataFrame de exemplo
+data = {'Mês': ['Jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago','set', 'out', 'nov', 'dez'],
+        'Faculdade': [1000, 1200, 1500, 1800, 2400, 1200, 300,500, 1560, 2000,456,679],
+        'Transporte': [800, 1100, 1400, 1700, 560, 1000, 500,600, 2000, 679, 780, 1300],
+        'Alimentacao': [300, 100, 1600, 400, 560, 800, 400, 678, 2000, 549, 1234,457]}
+df = pd.DataFrame(data)
+
+# Gráfico de linhas com múltiplas séries
+fig = px.line(df, x='Mês', y=['Faculdade', 'Transporte', 'Alimentacao'], 
+              title='Custos ao Longo do Tempo', 
+              template='plotly_dark')
+fig.show()
+
+```
